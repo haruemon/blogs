@@ -22,7 +22,6 @@
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
-        "moremost/swallow": "dev-master",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5"
     },
@@ -50,16 +49,6 @@
             "Tests\\": "tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/swallow"
-        },
-        {
-            "type": "vcs",
-            "url": "ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/json-table-generator"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {

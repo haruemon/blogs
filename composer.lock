@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c53bfb7cf837e22fe5c1dce94213a7d",
+    "content-hash": "d7e3d0a16e0b2abe32d8c2ab85ec0843",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3840,61 +3840,6 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
-            "name": "kalani/validation-rule-generator",
-            "version": "v0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jijoel/validation-rule-generator.git",
-                "reference": "ffc97d402f04c87ad0b167159302e4483e6aa0d8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jijoel/validation-rule-generator/zipball/ffc97d402f04c87ad0b167159302e4483e6aa0d8",
-                "reference": "ffc97d402f04c87ad0b167159302e4483e6aa0d8",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/dbal": "^2.9@dev",
-                "illuminate/support": "~5.5",
-                "php": ">=7.2.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0@dev",
-                "orchestra/testbench": "^3.9@dev",
-                "phpunit/phpunit": "^8.1@dev"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Jijoel\\ValidationRuleGenerator\\ServiceProvider"
-                    ],
-                    "aliases": {
-                        "ValidationRuleGenerator": "Jijoel\\ValidationRuleGenerator\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Jijoel\\ValidationRuleGenerator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Joel Hatch",
-                    "email": "jijoel@yahoo.com"
-                }
-            ],
-            "description": "Laravel 4 class to automatically generate validation rules based on table schema",
-            "keywords": [
-                "laravel",
-                "schema",
-                "validation"
-            ],
-            "time": "2019-02-23T19:45:38+00:00"
-        },
-        {
             "name": "mockery/mockery",
             "version": "1.2.3",
             "source": {
@@ -3958,91 +3903,6 @@
                 "testing"
             ],
             "time": "2019-08-07T15:01:07+00:00"
-        },
-        {
-            "name": "moremost/json-table-generator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/json-table-generator",
-                "reference": "fba062d6ba8567d0a0810eb9d2d3ef128ce8f416"
-            },
-            "require": {
-                "doctrine/dbal": "2.*",
-                "laravel/framework": "~5.5",
-                "php": ">=7.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "JsonTableGenerator\\JsonTableGeneratorServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JsonTableGenerator\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "authors": [
-                {
-                    "name": "山中 雅彦",
-                    "email": "my@moremost.jp"
-                }
-            ],
-            "description": "既存DBのテーブル定義情報をJsonファイルとして生成",
-            "time": "2019-07-04 09:37:06"
-        },
-        {
-            "name": "moremost/swallow",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "ssh://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/swallow",
-                "reference": "7baa516e707b59d74a7b09ded6bf19f76dc59e8c"
-            },
-            "require": {
-                "jeroennoten/laravel-adminlte": "^1.24",
-                "kalani/validation-rule-generator": "^0.2.0",
-                "laravel/framework": "~5.5",
-                "laravelcollective/html": "^5.3",
-                "maatwebsite/excel": "^3.1",
-                "moremost/json-table-generator": "dev-master",
-                "php": ">=7.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Swallow\\SwallowServiceProvider",
-                        "Maatwebsite\\Excel\\ExcelServiceProvider"
-                    ],
-                    "aliases": {
-                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Swallow\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "authors": [
-                {
-                    "name": "山中 雅彦",
-                    "email": "my@moremost.jp"
-                }
-            ],
-            "description": "create basic function by json table structure file",
-            "time": "2019-08-06 12:27:40"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5469,9 +5329,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "moremost/swallow": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
