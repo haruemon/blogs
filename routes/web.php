@@ -11,13 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'FrontController@index')->name('blog.index');
+Route::get('/blog/{post}', 'FrontController@show')->name('blog.show');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('/post', 'PostController');
