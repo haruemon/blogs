@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 2',
+    'title' => 'ブログ管理',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => 'ブログ管理',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => 'BLOG',
 
     /*
     |--------------------------------------------------------------------------
@@ -109,7 +109,7 @@ return [
     'menu' => [
         'メインメニュー',
         [
-            'text'    => 'post',
+            'text'    => '記事',
             'icon'    => 'fa fa-fw fa-circle',
             'submenu' => [
                 [
@@ -123,7 +123,7 @@ return [
             ],
         ],
         [
-            'text'    => 'user',
+            'text'    => 'ユーザ',
             'icon'    => 'fa fa-fw fa-circle',
             'submenu' => [
                 [

@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'user｜一覧')
+@section('title', 'ユーザ｜一覧')
 
 @section('content_header')
-    <h1>user</h1>
+    <h1>ユーザ</h1>
 @stop
 
 @section('content')
@@ -64,7 +64,7 @@
         <div class="col-xs-12">
             <div class="box box-primary">
                 <div class="box-header">
-                    <h3 class="box-title"><i class="fa fa-table"></i> user一覧</h3>
+                    <h3 class="box-title"><i class="fa fa-table"></i> ユーザ一覧</h3>
                     <span class="text-blue">&nbsp;&nbsp;{{ $users->total() }}件</span>
                     <a class="btn btn-warning pull-right" href="{{ route('user.create') }}"><i class="fa fa-fw fa-plus-circle"></i>新規登録</a>
                     <a class="btn btn-light pull-right" href="{{ route('csv_import.index', 'user') }}"><i class="fa fa-fw fa-plus-circle"></i>CSV取込</a>

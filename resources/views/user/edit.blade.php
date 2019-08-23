@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
 @if(!isset($user))
-    @section('title', 'user｜登録')
+    @section('title', 'ユーザ｜登録')
 @else
-    @section('title', 'user｜編集')
+    @section('title', 'ユーザ｜編集')
 @endif
 
 @section('content_header')
-    <h1>user</h1>
+    <h1>ユーザ</h1>
 @stop
 
 @section('content')
@@ -23,9 +23,9 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">
                         @if(!isset($user))
-                            <i class="fa fa-plus-circle"></i> user登録
+                            <i class="fa fa-plus-circle"></i> ユーザ登録
                         @else
-                            <i class="fa fa-plus-pencil"></i> user編集
+                            <i class="fa fa-plus-pencil"></i> ユーザ編集
                         @endif
                     </h3>
                     <div class="pull-right">

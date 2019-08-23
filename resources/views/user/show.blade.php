@@ -1,10 +1,10 @@
 
 @extends('adminlte::page')
 
-@section('title', 'user｜詳細')
+@section('title', 'ユーザ｜詳細')
 
 @section('content_header')
-    <h1>user</h1>
+    <h1>ユーザ</h1>
 @stop
 
 @section('content')
@@ -13,7 +13,7 @@
         <div class="col-md-12">
             <div class="box box-primary">
                 <div class="box-header">
-                    <h3 class="box-title"><i class="fa fa-table"></i> user詳細</h3>
+                    <h3 class="box-title"><i class="fa fa-table"></i> ユーザ詳細</h3>
                     <div class="pull-right">
                         <a class="btn-sm" href="{{ route('user.index') }}"><i class="fa fa-fw fa-users"></i>一覧</a>
                         <a class="btn-sm btn-warning" href="{{ route('user.create') }}"><i class="fa fa-fw fa-plus-circle"></i>新規登録</a>
