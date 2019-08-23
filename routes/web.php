@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('/post', 'PostController');
+    Route::resource('/user', 'UserController');
+    Route::get('/csv_import/{table_name}', 'CsvImportController@index')->name('csv_import.index');
+    Route::post('/csv_import/{table_name}', 'CsvImportController@store')->name('csv_import.store');
+});

@@ -10,19 +10,16 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $primaryKey = 'id';
+
     protected $fillable = [
-        'name', 'email', 'password',
+         'id', 'name', 'email', 'email_verified_at', 'password', 'remember_token', 'created_at', 'updated_at',
     ];
 
     /**
      * The attributes that should be hidden for arrays.
      *
-     * @var array
+     * @var  array
      */
     protected $hidden = [
         'password', 'remember_token',
@@ -31,9 +28,24 @@ class User extends Authenticatable
     /**
      * The attributes that should be cast to native types.
      *
-     * @var array
+     * @var  array
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function getPrimaryKey()
+    {
+        return $this->primaryKey;
+    }
+
+    public function scopeSearch($query, $request)
+    {
+        foreach ($request->all() as $column => $text) {
+            if ($column !== 'page' && $request->filled($column)) {
+                $query->where($column, 'like', '%'.$text.'%');
+            }
+        }
+        return $query;
+    }
+
 }

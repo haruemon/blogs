@@ -1,0 +1,16 @@
+.required:after {
+    content: " *";
+    color: red;
+}
+
+.table-responsive td {
+    white-space: nowrap
+}
+
+.table-responsive .action-btns {
+    white-space: nowrap
+}
+
+.table-responsive th {
+    white-space: nowrap
+}
