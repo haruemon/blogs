@@ -11,12 +11,12 @@ class Post extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'id', 'user_id', 'title', 'status', 'body', 'published_at',
+        'user_id', 'title', 'status', 'body', 'published_at',
     ];
 
-    protected $dates = ['published_at'];
+    protected $dates = ['published_at', 'created_at', 'updated_at'];
 
-    const DRAFT = 1;
+    const DRAFT = 0;
     const PUBLISHED = 1;
 
     protected $statusLabels = [
