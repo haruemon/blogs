@@ -91,7 +91,7 @@
                             <!-- post block -->
                             <div class="col-md-6">
                                 <div class="post-img">
-                                    <a href="{{ route('blog.show', $post) }}"><img src="images/post-img.jpg" alt="" class="img-responsive"></a>
+                                    <a href="{{ route('blog.show', $post) }}"><img src="images/blog_detail.jpg" alt="" class="img-responsive"></a>
                                 </div>
                             </div>
                             <div class="col-md-6">
